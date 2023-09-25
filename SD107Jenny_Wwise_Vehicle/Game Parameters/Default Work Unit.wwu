@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FE9977ED-8095-4F81-BA32-741CF852E2DF}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{FE9977ED-8095-4F81-BA32-741CF852E2DF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Vehicle" ID="{208697BF-57AF-462A-BADC-B043B1BDDF3D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

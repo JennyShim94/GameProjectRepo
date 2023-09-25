@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2BCC35BF-50EB-4F74-9904-A8E5DE4E7E8C}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{2BCC35BF-50EB-4F74-9904-A8E5DE4E7E8C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Vehicle" ID="{E605FE57-ECB9-48F2-B112-2B94157EAE43}" ShortID="1005280957">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66949BCA-A350-4B93-B427-2536D5AC0767}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Helicopter" ID="{7889798F-8B22-4DAA-9455-632F64658171}" WorkUnitID="{E0F6D908-838B-4842-9424-28740F846C32}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{360B90E1-10BB-4451-BA09-2CA3E61B123D}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Vehicle" ID="{1B191343-4E2C-4F81-888B-440A3C5C4FFD}" WorkUnitID="{E0F6D908-838B-4842-9424-28740F846C32}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Airplane" ID="{7EC52D4B-CD08-4908-99BF-B60BC5B21281}" ShortID="413940673">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66949BCA-A350-4B93-B427-2536D5AC0767}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{360B90E1-10BB-4451-BA09-2CA3E61B123D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="4-22 Airplane,Jet S-3b Viking_ Arrested Landing On Aircraft Carrier" ID="{6BF1607D-2A04-46FD-A09F-08949C9D7D7E}" ShortID="1007105588">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66949BCA-A350-4B93-B427-2536D5AC0767}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{360B90E1-10BB-4451-BA09-2CA3E61B123D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="4-22 Airplane,Jet S-3b Viking_ Arrested Landing On Aircraft Carrier" ID="{786ADA30-2BE4-4B28-8351-51B66F5816FD}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.771214310285518"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.5721912624699"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.81608531131751"/>
+												<Property Name="TrimEnd" Type="Real64" Value="16.4940350877193"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>4-22 Airplane,Jet S-3b Viking_ Arrested Landing On Aircraft Carrier.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="852665853"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{7D09BDFD-A9F4-4EDF-9375-972AB9FE0DF9}" ShortID="450893228">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Vehicle" ID="{208697BF-57AF-462A-BADC-B043B1BDDF3D}" WorkUnitID="{FE9977ED-8095-4F81-BA32-741CF852E2DF}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{DC9CAE62-0E80-4933-8B86-97028993A614}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="4-22 Airplane,Jet S-3b Viking_ Arrested Landing On Aircraft Carrier" ID="{786ADA30-2BE4-4B28-8351-51B66F5816FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Helicopter" ID="{AE60658A-7A44-4AB7-9140-CB5238128768}" ShortID="983652003">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66949BCA-A350-4B93-B427-2536D5AC0767}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{360B90E1-10BB-4451-BA09-2CA3E61B123D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="4-25 Helicopter Sh-3h Sea King_ Idle On Aircraft Carrier" ID="{20E07853-485F-4622-B36E-6970B1E7E5B7}" ShortID="659626617">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66949BCA-A350-4B93-B427-2536D5AC0767}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{360B90E1-10BB-4451-BA09-2CA3E61B123D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="4-25 Helicopter Sh-3h Sea King_ Idle On Aircraft Carrier" ID="{47899706-3E08-4DEC-9000-784DCF38529B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.19368421052632"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.16136222910217"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.80656346749226"/>
+												<Property Name="TrimEnd" Type="Real64" Value="118.587987616099"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>4-25 Helicopter Sh-3h Sea King_ Idle On Aircraft Carrier.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="457004072"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="4-25 Helicopter Sh-3h Sea King_ Idle On Aircraft Carrier" ID="{47899706-3E08-4DEC-9000-784DCF38529B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{0AF3438C-B6E7-4B6B-B155-002B671F452C}" ShortID="3264006">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Vehicle" ID="{208697BF-57AF-462A-BADC-B043B1BDDF3D}" WorkUnitID="{FE9977ED-8095-4F81-BA32-741CF852E2DF}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E9C62B0A-CD90-4F61-9AC3-A6E8AE7138FC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Airplane" ID="{7EC52D4B-CD08-4908-99BF-B60BC5B21281}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Helicopter" ID="{AE60658A-7A44-4AB7-9140-CB5238128768}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>0.5</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Airplane" ID="{74B06447-9A00-458F-B595-8939C18A49EE}"/>
+								<ItemList>
+									<ItemRef Name="Airplane" ID="{7EC52D4B-CD08-4908-99BF-B60BC5B21281}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Helicopter" ID="{7889798F-8B22-4DAA-9455-632F64658171}"/>
+								<ItemList>
+									<ItemRef Name="Helicopter" ID="{AE60658A-7A44-4AB7-9140-CB5238128768}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

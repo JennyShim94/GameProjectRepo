@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{71238D0C-1775-4945-A8BC-4596FE14C2DB}" SchemaVersion="110">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{71238D0C-1775-4945-A8BC-4596FE14C2DB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{41662705-04BB-4047-B646-DEDF5072A7D7}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Vehicle" ID="{E605FE57-ECB9-48F2-B112-2B94157EAE43}" WorkUnitID="{2BCC35BF-50EB-4F74-9904-A8E5DE4E7E8C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Vehicle" ID="{208697BF-57AF-462A-BADC-B043B1BDDF3D}"/>
+							<Value>0.32</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Airplane" ID="{74B06447-9A00-458F-B595-8939C18A49EE}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>
