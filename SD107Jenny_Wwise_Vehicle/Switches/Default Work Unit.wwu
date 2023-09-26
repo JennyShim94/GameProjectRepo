@@ -13,8 +13,8 @@
 						<Property Name="UseGameParameter" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Switch Name="Airplane" ID="{74B06447-9A00-458F-B595-8939C18A49EE}"/>
-						<Switch Name="Helicopter" ID="{7889798F-8B22-4DAA-9455-632F64658171}"/>
+						<Switch Name="HighSpeed" ID="{74B06447-9A00-458F-B595-8939C18A49EE}"/>
+						<Switch Name="LowSpeed" ID="{7889798F-8B22-4DAA-9455-632F64658171}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
 						<GameParameterRef Name="Vehicle" ID="{208697BF-57AF-462A-BADC-B043B1BDDF3D}"/>
@@ -25,8 +25,18 @@
 							<PointList>
 								<Point>
 									<XPos>0</XPos>
-									<YPos>1</YPos>
+									<YPos>2</YPos>
 									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.50099</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.999</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>1</XPos>
